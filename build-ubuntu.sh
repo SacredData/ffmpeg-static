@@ -20,11 +20,4 @@ apt-get -y --force-yes install \
 	texi2html \
 	zlib1g-dev
 
-# FOR 12.04
-# libx265 requires cmake version >= 2.8.8
-# 12.04 only have 2.8.7
-add-apt-repository ppa:roblib/ppa
-apt-get update
-apt-get install cmake
-
 ./build.sh
